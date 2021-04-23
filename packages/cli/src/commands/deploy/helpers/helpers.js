@@ -8,17 +8,17 @@ export const deployBuilder = (yargs) => {
     .option('build', {
       description: 'Build for production',
       type: 'boolean',
-      default: 'true',
+      default: true,
     })
     .option('prisma', {
       description: 'Apply database migrations',
       type: 'boolean',
-      default: 'true',
+      default: true,
     })
     .option('data-migrate', {
       description: 'Migrate the data in your database',
       type: 'boolean',
-      default: 'true',
+      default: true,
       alias: 'dm',
     })
     .epilogue(

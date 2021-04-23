@@ -15,18 +15,18 @@ export const builder = (yargs) => {
     .option('prisma', {
       description: 'Apply database migrations',
       type: 'boolean',
-      default: 'true',
+      default: true,
     })
     .option('data-migrate', {
       description: 'Migrate the data in your database',
       type: 'boolean',
-      default: 'true',
+      default: true,
       alias: 'dm',
     })
     .option('serve', {
       description: 'Run server for api in production',
       type: 'boolean',
-      default: 'true',
+      default: true,
     })
     .epilogue(
       `For more commands, options, and examples, see ${terminalLink(
